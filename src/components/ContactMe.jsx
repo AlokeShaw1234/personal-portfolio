@@ -1,18 +1,10 @@
 import { useState } from "react";
 import "./ContactMe.css";
 
-// INTERVIEW QUESTION: What are Controlled vs Uncontrolled Components in React forms?
-// ANSWER: 
-// - Controlled Components: Form input values are controlled by React State (`value={formData.name}` + `onChange`). React is the "single source of truth".
-// - Uncontrolled Components: Form data is handled directly by the DOM (e.g. using `useRef` to read values when needed).
-// Controlled Components are the standard way in React because they allow instant validation, conditional submit enabling, and clean data resetting.
-
-// INTERVIEW QUESTION: Why do we call `e.preventDefault()` in form submission?
-// ANSWER: HTML forms refresh the entire web page by default when submitted. Calling `e.preventDefault()` stops the default page reload,
-// allowing us to process form data via JavaScript/React (e.g., sending an API request using fetch/axios).
-
 function ContactMe() {
+
   // Single state object to manage all form fields cleanly
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,6 +15,7 @@ function ContactMe() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   // Generic input change handler using computed property names [e.target.name]
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -70,6 +63,7 @@ function ContactMe() {
         </div>
 
         {/* Form handling via React onSubmit listener */}
+
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="input-group">
             <input
@@ -113,6 +107,7 @@ function ContactMe() {
           </button>
 
           {/* Conditional feedback message after submission */}
+
           {isSubmitted && (
             <p style={{ color: "#4caf50", marginTop: "10px", fontWeight: "600" }}>
               Thank you! Your message has been recorded.

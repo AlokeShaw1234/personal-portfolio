@@ -1,7 +1,5 @@
 import "./Footer.css";
 
-// INTERVIEW QUESTION: Why should `target="_blank"` links always include `rel="noopener noreferrer"`?
-// ANSWER: 
 // 1. `noopener` prevents the new page from accessing the opening page's `window.opener` object, protecting against Tabnabbing phishing attacks.
 // 2. `noreferrer` prevents sending referrer info to the new page for privacy and security.
 
@@ -18,4 +16,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Footer;

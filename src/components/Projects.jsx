@@ -1,11 +1,5 @@
 import "./Projects.css";
 
-// INTERVIEW QUESTION: What are the benefits of data-driven rendering in React?
-// ANSWER: 
-// 1. Separation of concerns: Data is kept separate from presentation logic.
-// 2. Scalability: Adding a new project only requires adding an object to `projectsData`, without duplicating HTML markup.
-// 3. Maintainability: Bug fixes or style changes in the card layout automatically reflect across all rendered cards.
-
 const projectsData = [
   {
     id: "analog-clock",

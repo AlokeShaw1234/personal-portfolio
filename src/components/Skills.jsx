@@ -1,11 +1,10 @@
 import "./Skills.css";
 
-// INTERVIEW QUESTION: Why do we use .map() to render lists in React?
-// ANSWER: `.map()` creates a new array of JSX elements from a JS data array. It promotes clean code, reusability, and dynamic UI rendering.
+// use of `.map()` creates a new array of JSX elements from a JS data array promoting clean code, reusability, and dynamic UI rendering.
 
-// INTERVIEW QUESTION: What is the `key` prop and why is it important in React?
-// ANSWER: React uses the `key` prop to identify which items in a list have changed, been added, or removed. 
-// It allows React's Virtual DOM diffing algorithm (Reconciliation) to re-render only modified items efficiently.
+
+//  use of key - React uses the `key` prop to identify which items in a list have changed, been added, or removed. 
+
 
 const skillsData = [
   {

@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Home.css";
 
-// INTERVIEW QUESTION: What is useEffect and why do we need a cleanup function?
-// ANSWER: `useEffect` performs side-effects (like timers, API calls, event listeners) after component rendering.
 // Returning a cleanup function (`clearInterval(timer)`) is essential to prevent memory leaks when the component unmounts or re-renders.
 
 function Home() {
@@ -11,11 +9,13 @@ function Home() {
 
   useEffect(() => {
     // Set up an interval to cycle through roles every 2.5 seconds
+
     const timer = setInterval(() => {
       setCurrentRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
     }, 2500);
 
-    // INTERVIEW CLEANUP NOTE: Return cleanup function to clear interval on unmount
+    //  Returning cleanup function to clear interval on unmount
+
     return () => clearInterval(timer);
   }, [roles.length]);
 

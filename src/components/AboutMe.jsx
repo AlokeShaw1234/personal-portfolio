@@ -1,9 +1,5 @@
 import "./AboutMe.css";
 
-// INTERVIEW QUESTION: What is a Functional Component in React?
-// ANSWER: A functional component is a plain JavaScript function that accepts props (optional) and returns a React element (JSX).
-// Functional components with hooks are the modern standard in React development (replacing legacy Class components).
-
 function AboutMe() {
   return (
     <section id="about">

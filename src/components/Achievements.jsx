@@ -1,8 +1,6 @@
 import "./Achievements.css";
 
-// INTERVIEW QUESTION: What is the DRY (Don't Repeat Yourself) principle in software engineering?
-// ANSWER: DRY aims to reduce repetition of software patterns. In React, instead of copying HTML cards repeatedly,
-// we define the structure once and map over a data array dynamically.
+//  definining all the project structure once and map over a data array dynamically.
 
 const achievementsData = [
   {
@@ -30,8 +28,7 @@ const achievementsData = [
     title: "Hackathons & Open Source",
     description: "Active participant in tech hackathons and continuous learner of modern web tools.",
     imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR880z2QOUG-Jq40QLuSNVQYCe9pwMfIABTLiJrq_JcQw&s=10",
-    imageStyle: { width: "35px", filter: "invert(1)" },
-    iconClass: "bx bx-trophy"
+    imageStyle: { width: "35px", filter: "invert(1)" }
   }
 ];
 
