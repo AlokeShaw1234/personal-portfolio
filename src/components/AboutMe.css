@@ -1,0 +1,11 @@
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-container p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #8b949e;
+}

@@ -1,0 +1,69 @@
+/* INTERVIEW NOTE: Global CSS Reset & CSS Custom Properties (Variables) */
+/* Defining global rules in index.css (imported in main.jsx) ensures theme consistency across all React components */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #0d1117;       /* Dark background */
+    --text-color: #c9d1d9;     /* Light text */
+    --primary-color: #58a6ff;  /* Blue accent */
+    --secondary-bg: #161b22;   /* Slightly lighter dark for cards */
+    --border-color: #30363d;
+    --hover-color: #1f6feb;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+section {
+    padding: 100px 10%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
