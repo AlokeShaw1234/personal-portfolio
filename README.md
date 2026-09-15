@@ -1,16 +1,69 @@
-# React + Vite
+Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive personal portfolio website showcasing my skills, projects, education, as an aspiring software developer.
 
-Currently, two official plugins are available:
+🚀 Live Demo  : https://personal-portfolio-eight-chi-91.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Source Code : https://github.com/AlokeShaw1234/personal-portfolio
 
-## React Compiler
+👨‍💻 About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This portfolio was built to present my development journey, technical skills, and projects in a simple and professional way.
 
-## Expanding the Oxlint configuration
+It includes information about my background, projects, technical skills, resume, and ways to connect with me.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+🛠️ Tech Stack
+
+- Frontend: React.js, JavaScript, HTML5, CSS3
+- Tools: Git, GitHub, VS Code
+- Deployment: Vercel
+
+✨ Features
+
+- Responsive design
+- Modern and clean UI
+- About Me section
+- Skills and technologies section
+- Project showcase
+- Resume section
+- Contact section
+- Social media and GitHub links
+- Mobile-friendly layout
+
+📂 Project Structure
+
+personal-portfolio/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── App.jsx
+│   └── main.jsx
+├── package.json
+├── README.md
+└── ...
+
+⚙️ Run Locally
+
+Clone the repository:
+
+git clone https://github.com/AlokeShaw1234/personal-portfolio.git
+
+Navigate to the project directory:
+
+cd personal-portfolio
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
+npm run dev
+
+Open the local URL provided by Vite in your browser.
+
+📫 Connect With Me
+
+- GitHub: https://github.com/AlokeShaw1234
+- LinkedIn: https://www.linkedin.com/in/aloke-shaw-b68290289/
