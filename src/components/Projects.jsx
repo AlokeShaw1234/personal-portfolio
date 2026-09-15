@@ -92,7 +92,7 @@ function Projects() {
         {/* Dynamic rendering of project cards */}
         {projectsData.map((project) => (
           <div key={project.id} className="card">
-            <img src={project.image}/>
+            <img src={project.image} alt={project.title} className="project-card-image" />
             <div className="card-content">
               <h3>{project.title}</h3>
               <p className="about-project">{project.description}</p>

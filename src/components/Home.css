@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;         /* Center vertically */
     justify-content: center; 
+    padding-top: 100px;          /* Offset for fixed navbar */
 }
 
 .home-container {
@@ -24,12 +25,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    object-fit: cover;
 }
 
 .avatar {
-    width:380px;
+    width: 100%;
     max-width: 380px;
+    height: auto;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 50%; 
     box-shadow: 0 0 30px rgba(88, 166, 255, 0.2);
@@ -46,20 +48,25 @@
 .home-content h1 {
     font-size: 4rem;
     line-height: 1.2;
+    margin-bottom: 15px;
 }
 
 .highlight {
     color: var(--primary-color);
 }
 
-.home-content h2 {
-    font-size: 2rem;
+/* Styled dynamic role line */
+.home-content h3 {
+    font-size: 1.8rem;
     color: #8b949e;
     text-align: left;
     margin-bottom: 20px;
+    font-weight: 600;
 }
-.home-content h2::after {
-    display: none;
+
+.highlight-role {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .home-content p {
@@ -72,6 +79,7 @@
 .btn-group {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -82,6 +90,10 @@
     transition: all 0.3s ease;
     border: none;
     font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 .primary-btn {
@@ -91,7 +103,8 @@
 
 .primary-btn:hover {
     background-color: var(--hover-color);
-    box-shadow: 0 0 15px rgba(3, 6, 9, 0.4);
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.4);
 }
 
 .secondary-btn {
@@ -101,5 +114,91 @@
 }
 
 .secondary-btn:hover {
-    background-color: rgba(8, 10, 12, 0.1);
+    background-color: rgba(88, 166, 255, 0.1);
+}
+
+/* Laptops & Desktops (Max-width: 1024px) */
+
+@media (max-width: 1024px) {
+    .home-container {
+        gap: 30px;
+    }
+
+    .home-content h1 {
+        font-size: 3.2rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .avatar {
+        max-width: 320px;
+    }
+}
+
+/* Tablets & Mobile Devices (Max-width: 768px) */
+
+@media (max-width: 768px) {
+    #home {
+        padding-top: 110px;
+    }
+
+    /* Stack elements vertically on mobile with avatar at top */
+
+    .home-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .home-content p {
+        margin: 0 auto 25px auto;
+        font-size: 1rem;
+    }
+
+    .avatar {
+        max-width: 250px;
+    }
+
+    .btn-group {
+        justify-content: center;
+    }
+}
+
+/* Extra Small Mobile Devices (Max-width: 480px) */
+
+@media (max-width: 480px) {
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .home-content h3 {
+        font-size: 1.1rem;
+    }
+
+    .avatar {
+        max-width: 200px;
+    }
+
+    /* Make call-to-action buttons full width for easy mobile tap targets */
+    
+    .btn-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
 }

@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth; /* Smooth scrolling when clicking navbar anchor links */
+}
+
 :root {
     --bg-color: #0d1117;       /* Dark background */
     --text-color: #c9d1d9;     /* Light text */
@@ -22,12 +26,14 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevents unwanted horizontal scrollbar on mobile devices */
+    width: 100%;
 }
 
 h1, h2, h3, h4 {
     color: #ffffff;
     margin-bottom: 15px;
+    word-wrap: break-word; /* Wrap long headings on small mobile screens */
 }
 
 h2 {
@@ -66,4 +72,48 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+}
+    
+/*    GLOBAL RESPONSIVE MEDIA QUERIES  */
+
+/* Tablets & Small Laptops (Max-width: 1024px) */
+@media (max-width: 1024px) {
+    section {
+        padding: 80px 6%;
+    }
+    
+    h2 {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+    }
+}
+
+/* Mobile Devices & Tablets (Max-width: 768px) */
+@media (max-width: 768px) {
+    section {
+        padding: 70px 5%;
+        min-height: auto; /* Allow natural height on mobile so content isn't stretched or squished */
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    h2::after {
+        width: 45px;
+        height: 3px;
+    }
+}
+
+/* Extra Small Mobile Screens (Max-width: 480px) */
+@media (max-width: 480px) {
+    section {
+        padding: 60px 4%;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
 }
