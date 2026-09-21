@@ -9,7 +9,7 @@ function Footer() {
       <div className="social-links">
         <a href="mailto:alokes387@gmail.com">Gmail</a>
         <a href="https://github.com/alokeshaw1234" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/aoke-shaw-b68290289" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/aloke-shaw-b68290289/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
       <p className="copyright">&copy; {new Date().getFullYear()} Aloke Shaw. All rights reserved.</p>
     </footer>
