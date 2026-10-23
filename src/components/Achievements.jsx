@@ -5,14 +5,14 @@ import "./Achievements.css";
 const achievementsData = [
   {
     id: "Leetcode",
-    title: "125+ Problems",
+    title: "170+ Problems",
     description: "Consistently solving DSA problems on LeetCode to improve algorithmic thinking.",
     imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXZBlO8VkafUHgX_6oXE5hw4QYyE8fMSRf4lj1O81Z1A&s",
     imageStyle: { width: "35px", filter: "invert(1)" }
   },
   {
     id: "TUF",
-    title: "280+ Problems on TUF",
+    title: "295+ Problems on TUF",
     description: "Mastering core data structures and patterns and questions guided by Take U Forward.",
     imageSrc: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe3q6qz7h9EZjxte_y03RQ0Jx4dEqr5xmiH8y7nhYoExwJ_Zb4eXvm4a4&s=10",
     imageStyle: { width: "35px", filter: "invert(1)" }
